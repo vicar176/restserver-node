@@ -11,11 +11,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require('./controllers/usuario'));
+//Configuaracion de rutas
+app.use(require('./controllers/index'));
 
 mongoose.connect(process.env.URLDB, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }, (err, resp) => {
     if (err) throw err;
-
     console.log('Base de datos online');
 });
 
