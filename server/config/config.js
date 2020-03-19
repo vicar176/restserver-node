@@ -13,7 +13,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-    urlDB = 'mongodb+srv://admin:yesebb12Ir1cdcK0@cluster0-s8g4a.mongodb.net/cafe';
+    urlDB = process.env.MONGO_URL;
 }
 
 // MongoAtlas credentials
