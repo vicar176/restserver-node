@@ -33,3 +33,9 @@ if (process.env.NODE_ENV === 'dev') {
 // password: yesebb12Ir1cdcK0
 
 process.env.URLDB = urlDB;
+
+
+//===========================
+//     GOOGLE CLIENT ID
+//============================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '286841422562-8m91c7r4h4c7kjmob2v9gqi963nas2h4.apps.googleusercontent.com'

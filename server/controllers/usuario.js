@@ -143,6 +143,4 @@ app.delete('/usuario/:id', [verificaToken, verificaAdminRole], function(req, res
     // })
 })
 
-
-
 module.exports = app;
